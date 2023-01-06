@@ -1,0 +1,190 @@
+.header-container {
+  background-image: url(/image/main-bg.png);
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.header-container .nav-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+.header-container .nav-bar .sign-up {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.header-container .nav-bar .sign-up .sign-in-btn {
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background: #F1E4FF;
+  color: #685ED6;
+}
+.header-container .nav-bar .sign-up .sign-in-btn:hover {
+  background-color: #C39BFB;
+}
+.header-container .nav-bar .sign-up .reg-btn {
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background: #685ED6;
+  color: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+}
+.header-container .nav-bar .sign-up .reg-btn:hover {
+  background: #33AFE1;
+}
+.header-container .nav-bar .hamburger-menu {
+  display: none;
+}
+.header-container .header-banner {
+  padding-top: 95px;
+  display: flex;
+}
+.header-container .header-banner .banner-info {
+  padding-top: 31px;
+}
+.header-container .header-banner .banner-info .banner-title {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  color: #685ED6;
+}
+.header-container .header-banner .banner-info .banner-title span {
+  color: #1D2530;
+}
+.header-container .header-banner .banner-info .banner-desc {
+  padding-top: 24px;
+  padding-bottom: 32px;
+  font-size: 24px;
+  line-height: 34px;
+}
+.header-container .header-banner .banner-info .banner-desc span {
+  color: #685ED6;
+  font-weight: bold;
+}
+.header-container .header-banner .banner-info button {
+  border: none;
+  background: #685ED6;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  padding: 12px 32px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.header-container .header-banner .banner-info button:hover {
+  background: #33AFE1;
+}
+.header-container .header-banner .banner-img img {
+  width: auto;
+  margin-left: -77px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header-container .nav-bar {
+    max-width: 1024px;
+    margin: 0 40px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .header-container .nav-bar {
+    max-width: 768px;
+    margin: 0 40px;
+  }
+  .header-container .header-banner {
+    padding-top: 45px;
+  }
+  .header-container .header-banner .banner-info {
+    padding: 0;
+  }
+  .header-container .header-banner .banner-info .banner-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .header-container .header-banner .banner-info .banner-desc {
+    padding-top: 32px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .header-container .header-banner .banner-img img {
+    max-width: 420px;
+    margin-left: -77px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header-container .nav-bar {
+    align-items: start;
+    max-width: 480px;
+    margin: 0 23px;
+    padding-top: 32px;
+  }
+  .header-container .nav-bar .main-logo a img {
+    height: 28.3px;
+    width: auto;
+  }
+  .header-container .nav-bar .sign-up {
+    display: none;
+  }
+  .header-container .nav-bar .hamburger-menu {
+    display: block;
+  }
+  .header-container .nav-bar .hamburger-menu .menu-items {
+    display: none;
+  }
+  .header-container .nav-bar .hamburger-menu:hover {
+    display: block;
+  }
+  .header-container .nav-bar .hamburger-menu:hover .menu-icon {
+    display: none;
+  }
+  .header-container .nav-bar .hamburger-menu:hover .menu-items {
+    display: block;
+  }
+  .header-container .nav-bar .hamburger-menu:hover .menu-items .menu-list {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 20px;
+  }
+  .header-container .nav-bar .hamburger-menu:hover .menu-items .menu-list:hover {
+    font-weight: 700;
+    color: #685ED6;
+  }
+  .header-container .header-banner {
+    padding-top: 41.6px;
+    display: block;
+  }
+  .header-container .header-banner .banner-info {
+    padding: 0;
+  }
+  .header-container .header-banner .banner-info .banner-title {
+    font-size: 32px;
+    line-height: 40px;
+    color: #685ED6;
+  }
+  .header-container .header-banner .banner-info .banner-desc {
+    padding-top: 32px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .header-container .header-banner .banner-img img {
+    display: flex;
+    padding-top: 48px;
+    max-width: 330px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=header.css.map */

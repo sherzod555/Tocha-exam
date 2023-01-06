@@ -1,0 +1,113 @@
+.mail {
+  padding: 90px 0;
+}
+.mail .bg-image {
+  background-image: url(/image/bg-purple.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  border-radius: 5px;
+}
+.mail .bg-image .mail-img img {
+  display: flex;
+  align-items: flex-end;
+  width: 314px;
+  height: auto;
+  margin-left: 86px;
+}
+.mail .bg-image .email-form-section {
+  padding-top: 48px;
+  padding-left: 80px;
+  max-width: 500px;
+}
+.mail .bg-image .email-form-section .email-title {
+  font-weight: 800;
+  font-size: 33px;
+  line-height: 41px;
+  color: #ffffff;
+}
+.mail .bg-image .email-form-section .email-submit {
+  padding-top: 32px;
+}
+.mail .bg-image .email-form-section .email-submit #email {
+  border-radius: 5px 0px 0px 5px;
+  padding: 14px 16px;
+  width: 248px;
+  height: 52px;
+  background: #F4F5F7;
+  border: none;
+}
+.mail .bg-image .email-form-section .email-submit button {
+  margin-left: -5px;
+  border: none;
+  width: 120px;
+  height: 52px;
+  background: #18191F;
+  border-radius: 0px 5px 5px 0px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.mail .bg-image .email-form-section .email-submit button:hover {
+  background: #696a6e;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .mail {
+    padding: 54px 0;
+  }
+  .mail .bg-image {
+    background-size: cover;
+  }
+  .mail .bg-image .mail-img img {
+    width: 269px;
+    margin-left: 30px;
+  }
+  .mail .bg-image .email-form-section {
+    padding-top: 49px;
+    padding-left: 0;
+    max-width: 350px;
+  }
+  .mail .bg-image .email-form-section .email-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .mail .bg-image .email-form-section .email-submit #email {
+    width: 210px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mail {
+    padding: 54px 0;
+  }
+  .mail .bg-image {
+    display: block;
+    padding: 0 19px 40px;
+  }
+  .mail .bg-image .mail-img img {
+    display: flex;
+    width: 269px;
+    margin: 0 auto;
+  }
+  .mail .bg-image .email-form-section {
+    margin: 0 auto;
+    padding: 24px 0 0;
+    max-width: 300px;
+  }
+  .mail .bg-image .email-form-section .email-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .mail .bg-image .email-form-section .email-submit {
+    padding-top: 16px;
+  }
+  .mail .bg-image .email-form-section .email-submit #email {
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px 12px;
+    width: 151px;
+    height: 44px;
+  }
+  .mail .bg-image .email-form-section .email-submit button {
+    height: 44px;
+    background: #18191F;
+  }
+}/*# sourceMappingURL=email.css.map */

@@ -1,0 +1,116 @@
+.tocha-online {
+  background: rgba(242, 247, 255, 0.5);
+}
+.tocha-online .tocha-online__info {
+  display: flex;
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+  padding-top: 95px;
+  padding-bottom: 70px;
+}
+.tocha-online .tocha-online__info .info-features .info-title {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 32px;
+  margin-bottom: 68px;
+}
+.tocha-online .tocha-online__info .info-features .info-card-section {
+  display: grid;
+  row-gap: 50px;
+}
+.tocha-online .tocha-online__info .info-features .info-card-section .info-card {
+  display: flex;
+  align-items: center;
+  max-width: 522px;
+  -moz-column-gap: 29px;
+       column-gap: 29px;
+}
+.tocha-online .tocha-online__info .info-features .info-card-section .info-card .info-card__img img {
+  width: auto;
+  height: auto;
+}
+.tocha-online .tocha-online__info .info-features .info-card-section .info-card .info-card__text .info-card__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+.tocha-online .tocha-online__info .info-features .info-card-section .info-card .info-card__text .info-card__desc {
+  padding-top: 8px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.tocha-online .tocha-online__info .info-image img {
+  max-width: 411.4px;
+  height: auto;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .tocha-online .tocha-online__info {
+    -moz-column-gap: 0;
+         column-gap: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .tocha-online .tocha-online__info .info-features .info-title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  .tocha-online .tocha-online__info .info-features .info-card-section {
+    row-gap: 16px;
+  }
+  .tocha-online .tocha-online__info .info-features .info-card-section .info-card {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .tocha-online .tocha-online__info .info-features .info-card-section .info-card .info-card__img img {
+    width: 42px;
+    height: auto;
+  }
+  .tocha-online .tocha-online__info .info-features .info-card-section .info-card .info-card__text .info-card__title {
+    font-size: 20px;
+  }
+  .tocha-online .tocha-online__info .info-features .info-card-section .info-card .info-card__text .info-card__desc {
+    padding-top: 4px;
+  }
+  .tocha-online .tocha-online__info .info-image img {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tocha-online .tocha-online__info {
+    display: block;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .tocha-online .tocha-online__info .info-features .info-title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 40px;
+  }
+  .tocha-online .tocha-online__info .info-features .info-card-section {
+    row-gap: 16px;
+  }
+  .tocha-online .tocha-online__info .info-features .info-card-section .info-card {
+    max-width: none;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+  .tocha-online .tocha-online__info .info-features .info-card-section .info-card .info-card__img img {
+    width: 42px;
+    height: 42px;
+  }
+  .tocha-online .tocha-online__info .info-features .info-card-section .info-card .info-card__text .info-card__title {
+    font-size: 20px;
+  }
+  .tocha-online .tocha-online__info .info-features .info-card-section .info-card .info-card__text .info-card__desc {
+    padding-top: 4px;
+  }
+  .tocha-online .tocha-online__info .info-image img {
+    padding-top: 24px;
+    max-width: 300px;
+    height: auto;
+  }
+}/*# sourceMappingURL=tocha-online.css.map */

@@ -1,0 +1,295 @@
+.tarif {
+  padding-top: 100px;
+}
+.tarif .tarif-title {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 64px;
+  text-align: center;
+}
+.tarif .tarif-desc {
+  padding-top: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+}
+.tarif .tarif-card-desktop {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.tarif .tarif-card-desktop .tarif-card {
+  text-align: center;
+  width: 350px;
+  height: 387px;
+  background: #FCFEFF;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+}
+.tarif .tarif-card-desktop .tarif-card .card-status {
+  background: rgba(104, 94, 214, 0.05);
+  width: 100%;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 48px;
+  color: #685ED6;
+}
+.tarif .tarif-card-desktop .tarif-card .card-info {
+  padding: 40px 30px 50px;
+}
+.tarif .tarif-card-desktop .tarif-card .card-info .card-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+}
+.tarif .tarif-card-desktop .tarif-card .card-info .card-price {
+  padding-top: 32px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 46px;
+}
+.tarif .tarif-card-desktop .tarif-card .card-info button {
+  width: 100%;
+  padding: 12px 32px;
+  background: #685ED6;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  border: none;
+}
+.tarif .tarif-card-desktop .tarif-card .card-info button:hover {
+  background: #33AFE1;
+}
+.tarif #tarif-card-slideshow {
+  display: none;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .tarif {
+    padding-top: 54px;
+  }
+  .tarif .tarif-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .tarif .tarif-desc {
+    padding-top: 8px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .tarif .tarif-card-desktop {
+    display: none;
+  }
+  .tarif #tarif-card-slideshow {
+    display: block;
+    overflow: hidden;
+    padding-top: 36px;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1030px;
+    -webkit-animation: slide 18s ease infinite;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .slide {
+    float: left;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card {
+    text-align: center;
+    width: 330px;
+    height: 387px;
+    background: #FCFEFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card .card-status {
+    background: rgba(104, 94, 214, 0.05);
+    width: 100%;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 48px;
+    color: #685ED6;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card .card-info {
+    padding: 40px 30px 50px;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card .card-info .card-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card .card-info .card-price {
+    padding-top: 32px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 46px;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card .card-info button {
+    width: 100%;
+    padding: 12px 0;
+    background: #685ED6;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card .card-info button:hover {
+    background: #33AFE1;
+  }
+  .tarif #tarif-card-slideshow .slider-dots {
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .tarif #tarif-card-slideshow .slider-dots .span {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #685ED6;
+    border-radius: 50%;
+  }
+  .tarif #tarif-card-slideshow .slider-dots .span1 {
+    background-color: #685ED6;
+  }
+  @-webkit-keyframes slide {
+    20% {
+      margin-left: 5px;
+    }
+    40% {
+      margin-left: 5px;
+    }
+    80% {
+      margin-left: -345px;
+    }
+    90% {
+      margin-left: -345px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .tarif {
+    padding-top: 54px;
+  }
+  .tarif .tarif-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .tarif .tarif-desc {
+    padding-top: 8px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .tarif .tarif-card-desktop {
+    display: none;
+  }
+  .tarif #tarif-card-slideshow {
+    display: block;
+    overflow: hidden;
+    padding-top: 32px;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1030px;
+    -webkit-animation: slide 18s ease infinite;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .slide {
+    float: left;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card {
+    text-align: center;
+    width: 330px;
+    height: 387px;
+    background: #FCFEFF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card .card-status {
+    background: rgba(104, 94, 214, 0.05);
+    width: 100%;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 48px;
+    color: #685ED6;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card .card-info {
+    padding: 40px 30px 50px;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card .card-info .card-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card .card-info .card-price {
+    padding-top: 32px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 46px;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card .card-info button {
+    width: 100%;
+    padding: 12px 0;
+    background: #685ED6;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+  }
+  .tarif #tarif-card-slideshow .slide-wrapper .tarif-card .card-info button:hover {
+    background: #33AFE1;
+  }
+  .tarif #tarif-card-slideshow .slider-dots {
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 12px;
+         column-gap: 12px;
+  }
+  .tarif #tarif-card-slideshow .slider-dots .span {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #685ED6;
+    border-radius: 50%;
+  }
+  .tarif #tarif-card-slideshow .slider-dots .span1 {
+    background-color: #685ED6;
+  }
+  @-webkit-keyframes slide {
+    20% {
+      margin-left: 5px;
+    }
+    30% {
+      margin-left: 5px;
+    }
+    50% {
+      margin-left: -345px;
+    }
+    60% {
+      margin-left: -345px;
+    }
+    80% {
+      margin-left: -670px;
+    }
+    90% {
+      margin-left: -670px;
+    }
+  }
+}/*# sourceMappingURL=tarif.css.map */

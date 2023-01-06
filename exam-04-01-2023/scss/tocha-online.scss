@@ -1,0 +1,127 @@
+.tocha-online {
+    background: rgba(242, 247, 255, 0.5);
+    .tocha-online__info {
+        display: flex;
+        column-gap: 70px;
+        padding-top: 95px;
+        padding-bottom: 70px;
+        .info-features {
+            .info-title {
+                font-weight: 800;
+                font-size: 48px;
+                line-height: 32px;
+                margin-bottom: 68px;
+            }
+            .info-card-section {
+                display: grid;
+                row-gap: 50px;
+                .info-card {
+                    display: flex;
+                    align-items: center;
+                    max-width: 522px;
+                    column-gap: 29px;
+                    .info-card__img img {
+                        width: auto;
+                        height: auto;
+                    }
+                    .info-card__text {
+                        .info-card__title {
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 32px;
+                        }
+                        .info-card__desc {
+                            padding-top: 8px;
+                            font-size: 16px;
+                            line-height: 26px;
+                        }
+                    }
+                }
+            }
+        }
+        .info-image img {
+            max-width: 411.4px;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .tocha-online {
+        .tocha-online__info {
+            column-gap: 0;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            .info-features {
+                .info-title {
+                    font-size: 32px;
+                    line-height: 40px;
+                    margin-bottom: 40px;
+                }
+                .info-card-section {
+                    row-gap: 16px;
+                    .info-card {
+                        column-gap: 20px;
+                        .info-card__img img {
+                            width: 42px;
+                            height: auto;
+                        }
+                        .info-card__text {
+                            .info-card__title {
+                                font-size: 20px;
+                            }
+                            .info-card__desc {
+                                padding-top: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+            .info-image img {
+                max-width: 300px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tocha-online {
+        .tocha-online__info {
+            display: block;
+            column-gap: 0;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            .info-features {
+                .info-title {
+                    font-size: 32px;
+                    line-height: 40px;
+                    margin-bottom: 40px;
+                }
+                .info-card-section {
+                    row-gap: 16px;
+                    .info-card {
+                        max-width: none;
+                        column-gap: 20px;
+                        .info-card__img img {
+                            width: 42px;
+                            height: 42px;
+                        }
+                        .info-card__text {
+                            .info-card__title {
+                                font-size: 20px;
+                            }
+                            .info-card__desc {
+                                padding-top: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+            .info-image img {
+                padding-top: 24px;
+                max-width: 300px;
+                height: auto;
+            }
+        }
+    }
+}

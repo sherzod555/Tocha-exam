@@ -1,0 +1,206 @@
+.header-container {
+    background-image: url(/image/main-bg.png);
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    .nav-bar {
+        position: sticky;
+        top: 0;
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 32px;
+        .sign-up {
+            display: flex;
+            column-gap: 12px;
+            .sign-in-btn {
+                border: none;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                padding: 10px 20px;
+                border-radius: 6px;
+                background: #F1E4FF;
+                color: #685ED6;
+            }
+            .sign-in-btn:hover {
+                background-color: #C39BFB;
+            }
+            .reg-btn {
+                border: none;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                padding: 10px 20px;
+                border-radius: 6px;
+                background: #685ED6;
+                color: #FFFFFF;
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+            }
+            .reg-btn:hover {
+                background: #33AFE1;
+            }
+        }
+        .hamburger-menu {
+            display: none;
+        }
+    }
+    .header-banner {
+        padding-top: 95px;
+        display: flex;
+        .banner-info {
+            padding-top: 31px;
+            .banner-title {
+                font-weight: 800;
+                font-size: 50px;
+                line-height: 60px;
+                color: #685ED6;
+                span {
+                    color: #1D2530;
+                }
+            }
+            .banner-desc {
+                padding-top: 24px;
+                padding-bottom: 32px;
+                font-size: 24px;
+                line-height: 34px;
+                span {
+                    color: #685ED6;
+                    font-weight: bold;
+                }
+            }
+            button {
+                border: none;
+                background: #685ED6;
+                box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+                border-radius: 6px;
+                padding: 12px 32px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+            button:hover {
+                background: #33AFE1;
+            }
+        }
+        .banner-img {
+            img {
+                width: auto;
+                margin-left: -77px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header-container {
+        .nav-bar {
+            max-width: 1024px;
+            margin: 0 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .header-container {
+        .nav-bar {
+            max-width: 768px;
+            margin: 0 40px;
+        }
+        .header-banner {
+            padding-top: 45px;
+            .banner-info {
+                padding: 0;
+                .banner-title {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+                .banner-desc {
+                    padding-top: 32px;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+            .banner-img {
+                img {
+                    max-width: 420px;
+                    margin-left: -77px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-container {
+        .nav-bar {
+            align-items: start;
+            max-width: 480px;
+            margin: 0 23px;
+            padding-top: 32px;
+            .main-logo {
+                a {
+                    img {
+                        height: 28.3px;
+                        width: auto;
+                    }
+                }
+            }
+            .sign-up {
+                display: none;
+            }
+            .hamburger-menu {
+                display: block;
+                .menu-items {
+                    display: none;
+                }
+            }
+            .hamburger-menu:hover {
+                display: block;
+                .menu-icon {
+                    display: none;
+                }
+                .menu-items {
+                    display: block;
+                    .menu-list {
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding: 10px 20px;
+                    }
+                    .menu-list:hover {
+                        font-weight: 700;
+                        color: #685ED6;
+                    }
+                }
+            }
+        }
+        .header-banner {
+            padding-top: 41.6px;
+            display: block;
+            .banner-info {
+                padding: 0;
+                .banner-title {
+                    font-size: 32px;
+                    line-height: 40px;
+                    color: #685ED6;
+                }
+                .banner-desc {
+                    padding-top: 32px;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+            .banner-img {
+                img {
+                    display: flex;
+                    padding-top: 48px;
+                    max-width: 330px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

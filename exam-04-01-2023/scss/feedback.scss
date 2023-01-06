@@ -1,0 +1,287 @@
+.feedback {
+    background: rgba(242, 247, 255, 0.5);
+    .container {
+        padding-top: 17px;
+        padding-bottom: 80px;
+        text-align: center;
+        background-image: url(/image/braces.svg);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        .feedback-title {
+            font-weight: 800;
+            font-size: 46px;
+            line-height: 64px;
+        }
+        .feedback-row__desktop {
+            padding-top: 48px;
+            display: flex;
+            column-gap: 30px;
+            .feedback-card {
+                .feedback-card__text {
+                    max-width: 540px;
+                    max-height: 220px;
+                    padding: 32px 32px 56px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                    border-radius: 6px;
+                    .card-text__title {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 28px;
+                        font-family: 'Inter', sans-serif;
+                    }
+                    .card-text__desc {
+                        padding-top: 8px;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+                .comment-tail {
+                    margin: -15px auto 0;
+                    width: 24px;
+                    height: 24px;
+                    background-color: #FFFFFF;
+                    rotate: 45deg;
+                }
+                .feedback-card__author {
+                    padding-top: 28px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 16px;
+                    .author-img img {
+                        width: 56px;
+                        height: auto;
+                    }
+                    .author-info {
+                        .author-name {
+                            font-weight: 700;
+                            font-size: 18px;
+                            line-height: 28px;
+                        }
+                        .site {
+                            font-size: 14px;
+                            line-height: 24px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        #feedback-row-slideshow {
+            display: none;
+        }
+        .slider-dots {
+            padding-top: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 12px;
+            .span {
+                width: 10px;
+                height: 10px;
+                border: 2px solid #685ED6;
+                border-radius: 50%;
+            }
+            .span1 {
+                background-color: #685ED6;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .feedback {
+        .container {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            .feedback-title {
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 40px;
+            }
+            .feedback-row__desktop {
+                display: none;
+            }
+            #feedback-row-slideshow {
+                display: block;
+                overflow: hidden;
+                padding-top: 40px;
+                .slide-wrapper {
+                    display: flex;
+                    column-gap: 30px;
+                    width: 1110px;
+                    -webkit-animation: slide-feedback 18s ease infinite;
+                    .slide-feedback {
+                        float: left;
+                        // height: 510px;
+                        // width: 728px;
+                    }
+                    .feedback-card {
+                        .feedback-card__text {
+                            max-width: 540px;
+                            max-height: 220px;
+                            padding: 32px 32px 56px;
+                            background: #FFFFFF;
+                            box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                            border-radius: 6px;
+                            .card-text__title {
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 28px;
+                                font-family: 'Inter', sans-serif;
+                            }
+                            .card-text__desc {
+                                padding-top: 8px;
+                                font-size: 14px;
+                                line-height: 24px;
+                            }
+                        }
+                        .comment-tail {
+                            margin: -15px auto 0;
+                            width: 24px;
+                            height: 24px;
+                            background-color: #FFFFFF;
+                            rotate: 45deg;
+                        }
+                        .feedback-card__author {
+                            padding-top: 28px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            column-gap: 16px;
+                            .author-img img {
+                                width: 56px;
+                                height: auto;
+                            }
+                            .author-info {
+                                .author-name {
+                                    font-weight: 700;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                }
+                                .site {
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @-webkit-keyframes slide-feedback {
+        20% {
+            margin-left: 5px;
+        }
+        30% {
+            margin-left: 5px;
+        }
+        80% {
+            margin-left: -480px;
+        }
+        90% {
+            margin-left: -480px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .feedback {
+        .container {
+            padding-top: 60px;
+            padding-bottom: 51px;
+            .feedback-title {
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 40px;
+            }
+            .feedback-row__desktop {
+                display: none;
+            }
+            #feedback-row-slideshow {
+                display: block;
+                overflow: hidden;
+                padding-top: 40px;
+                .slide-wrapper {
+                    display: flex;
+                    column-gap: 30px;
+                    width: 830px;
+                    -webkit-animation: slide-feedback 18s ease infinite;
+                    .slide-feedback {
+                        float: left;
+                        // height: 510px;
+                        // width: 728px;
+                    }
+                    .feedback-card {
+                        .feedback-card__text {
+                            max-width: 350px;
+                            height: 280px;
+                            padding: 32px 20px 46px;
+                            background: #FFFFFF;
+                            box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+                            border-radius: 6px;
+                            .card-text__title {
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 28px;
+                                font-family: 'Inter', sans-serif;
+                            }
+                            .card-text__desc {
+                                padding-top: 8px;
+                                font-size: 14px;
+                                line-height: 24px;
+                            }
+                        }
+                        .comment-tail {
+                            margin: -15px auto 0;
+                            width: 24px;
+                            height: 24px;
+                            background-color: #FFFFFF;
+                            rotate: 45deg;
+                        }
+                        .feedback-card__author {
+                            padding-top: 28px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            column-gap: 16px;
+                            .author-img img {
+                                width: 56px;
+                                height: auto;
+                            }
+                            .author-info {
+                                .author-name {
+                                    font-weight: 700;
+                                    font-size: 18px;
+                                    line-height: 28px;
+                                }
+                                .site {
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @-webkit-keyframes slide-feedback {
+        20% {
+            margin-left: 5px;
+        }
+        30% {
+            margin-left: 5px;
+        }
+        80% {
+            margin-left: -360px;
+        }
+        90% {
+            margin-left: -360px;
+        }
+    }
+}
